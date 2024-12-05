@@ -4,6 +4,17 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.border-r-150': {
+          borderRightWidth: '150px',
+        },
+        '.border-l-150': {
+          borderLeftWidth: '150px',
+        },
+      });
+    },
+  ],
 }
 
