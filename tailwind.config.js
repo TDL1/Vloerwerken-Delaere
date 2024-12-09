@@ -2,16 +2,13 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [
     function({ addUtilities }) {
       addUtilities({
-        '.border-r-150': {
-          borderRightWidth: '150px',
-        },
-        '.border-l-150': {
-          borderLeftWidth: '150px',
+        '.h-128': {
+          height: '32rem',
         },
       });
     },
