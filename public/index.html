@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="../../node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/script.js"></script>
     <title>Vloerwerken Delaere</title>
 </head>
-<body>
+<body class="font-proxima">
     <header>
-      <nav class="text-white py-6" style="background-color: rgb(41, 41, 43);">
+      <nav class="text-white py-2" style="background-color: rgb(41, 41, 43);">
         <div class="container mx-auto flex justify-center">
               <!-- Logo -->
-              <div class="flex items-center px-48">
+              <div class="flex items-center px-28">
                 <a href="index.html">
-                  <img src="images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-32 w-auto">
+                  <img src="images/vloerwerkenlogosupercut.jpg" alt="Vloerwerken Logo" class="h-24 w-auto">
                 </a>
               </div>
           
               <!-- Navigation Links -->
               <div class="flex items-center px-28">
                 <ul class="flex space-x-6">
-                  <li><a href="index.html" class="hover:text-blue-500 px-4">HOME</a></li>
-                  <li><a href="services.html" class="hover:text-blue-500 px-4">DIENSTEN</a></li>
-                  <li><a href="about.html" class="hover:text-blue-500 px-4">OVER ONS</a></li>
-                  <li><a href="contact.html" class="hover:text-blue-500 px-4">CONTACT</a></li>
+                  <li><a href="index.html" class="hover:text-gray-500 px-4">HOME</a></li>
+                  <li><a href="services.html" class="hover:text-gray-500 px-4">DIENSTEN</a></li>
+                  <li><a href="#aboutnav" class="hover:text-gray-500 px-4">OVER ONS</a></li>
+                  <li><a href="contact.html" class="hover:text-gray-500 px-4">CONTACT</a></li>
                 </ul>
               </div>
           
               <!-- Quick Action Button -->
-              <div class="flex items-center">
+              <div class="flex items-center px-24">
                 <a href="offer.html">
-                  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4">
+                  <button class="hover:text-gray-200 text-white py-2 px-4" style="background-color: rgb(37, 49, 138);">
                     <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
                   </button>
                 </a>
@@ -43,7 +45,7 @@
 
     <main class="bg-gray-100 text-gray-800 ">
         <section>
-            <nav class="bg-gray-800 text-white py-6">
+            <nav class="bg-gray-800 text-white py-6" style="background-color: rgb(47, 62, 173);">
                 <div class="container mx-auto px-4 flex justify-center items-center py-0">
                   <!-- Navigation Links -->
                   <ul class="flex space-x-8 items-center">
@@ -52,31 +54,30 @@
                     <li><a href="services/terraces-driveways.html" class="hover:text-blue-400">Terras/Oprit</a></li>
                     <li><a href="services/bathrooms.html" class="hover:text-blue-400">Badkamers</a></li>
                     <li><a href="services/terraces-carriers.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
-                    <li><a href="services/flooring-breakout.html" class="hover:text-blue-400">Uitbreken tegelwerk</a></li>
                   </ul>
                 </div>
               </nav>
         </section>
 
         <!-- Hero Section -->
-        <section id="hero" class="bg-cover bg-center h-128 flex items-center justify-center text-white" style="background-image: url('images/vloer-foto-1.jpg');">
+        <section id="hero" class="bg-cover bg-center h-128 flex items-center justify-center text-white" style="background-image: url('images/testherofoto.JPG');">
           <div class="container mx-auto px-16">
             <h1 class="font-bold" style="font-size: 72px;">Vloerwerken Delaere</h1>
             <p class="mt-3 text-xl"><strong>&nbsp;&nbsp;Uw Droom, Onze Passie</strong></p>
             <a href="services.html">
-              <button class="mt-6 bg-blue-600 hover:bg-blue-700 text-white py-2 px-6">
+              <button class="mt-6 text-white hover:text-gray-200  py-2 px-6" style="background-color: rgb(37, 49, 138);">
                 <b>Ontdek onze diensten<i class="material-icons" style="vertical-align: middle;">start</i></b>
               </button>
             </a>
               <a href="offer.html">
-                <button class="mt-6 bg-white hover:bg-gray-200 text-blue-500 py-2 px-6">
+                <button class="mt-6 bg-white hover:bg-gray-200 py-2 px-6" style="color: rgb(37, 49, 138);">
                   <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
                 </button>
               </a>
           </div>
         </section>
       
-        <section class="bg-gray-800 text-white flex py-6">
+        <section id="aboutnav" class="text-white flex py-6" style="background-color: rgb(47, 62, 173);">
           <div class="container mx-auto flex justify-center">
             <!-- First Keyword and Logo -->
             <div class="flex items-center px-28">
@@ -99,24 +100,24 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-16 px-4">
+        <section id="about" class="py-16 px-4 text-white" style="background-color: rgb(68, 68, 71);">
           <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Over ons</h2>
-            <p class="max-w-2xl mx-auto">
-              Ze zeggen soms dat een vlaming met een baksteen in de maag geboren is, hier is dit niet anders... al zal het waarschijnlijk een stuk keramiek zijn hier.
+            <p class="max-w-4xl mx-auto">
+              Ze zeggen soms dat een vlaming met een baksteen in de maag geboren is, hier is dit niet anders... al zal het waarschijnlijk een stuk keramiek zijn.
               Eind 2006 ben ik begonnen met mijn bedrijfje, zovele jaren later nog altijd even gedreven en met passie aan de slag!
               Steeds streven wij ernaar om een mooi resultaat af te leveren, een tevreden klant is voor ons immers heel belangrijk!
-              Een woord is een woord, bij ons geen loze beloftes. Wij verzorgen projecten over gans west-en oost vlaanderen, of zelfs daarbuiten.
+              Een woord is een woord, bij ons geen loze beloftes. Wij verzorgen projecten over gans West-en Oost Vlaanderen, of zelfs daarbuiten.
             </p>
           </div>
         </section>
       
         <!-- Services Section -->
-        <section id="services" class="py-16 px-4 bg-gray-300">
+        <section id="services" class="py-16 px-4 text-white" style="background-color: rgb(90, 90, 93);">
           <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Onze diensten</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div class="bg-white p-6 shadow-lg rounded">
+              <div class="bg-white text-black p-6 shadow-lg rounded">
                 <img src="images/flooring-icon.png" alt="Vloeren logo" class="mx-auto mb-4 h-16 w-16">
                 <h3 class="text-xl font-bold">Vloeren</h3>
                 <p class="mt-4">
@@ -124,7 +125,7 @@
                   Gaat u eerder voor strak modern landelijke stijl of toch iets helemaal anders, aarzel niet, wij staan u steeds bij met raad en daad.
                 </p>
               </div>
-              <div class="bg-white p-6 shadow-lg rounded">
+              <div class="bg-white text-black p-6 shadow-lg rounded">
                 <div class="flex justify-center space-x-11 mb-4 p-4">
                   <img src="images/walltiles-icon.png" alt="Wandtegels logo" class="h-16 w-16">
                   <img src="images/mozaic-icon.png" alt="Mozaïek logo" class="h-16 w-16">
@@ -136,7 +137,7 @@
                 </p>
               </div>
 
-              <div class="bg-white p-6 shadow-lg rounded">
+              <div class="bg-white text-black p-6 shadow-lg rounded">
                 <div class="flex justify-center space-x-11 mb-4 p-4">
                   <img src="images/terras-icon.png" alt="Opritten logo" class="h-16 w-16">
                   <img src="images/patio-icon.png" alt="Terras logo" class="h-16 w-16">
@@ -147,7 +148,7 @@
                   zodat u zorgeloos kan genieten van uw buitenomgeving.
                 </p>
               </div>
-              <div class="bg-white p-6 shadow-lg rounded">
+              <div class="bg-white text-black p-6 shadow-lg rounded">
                 <img src="images/bathtub-icon.png" alt="Badkamers logo" class="mx-auto mb-4 h-16 w-16">
                 <h3 class="text-xl font-bold">Badkamers</h3>
                 <p class="mt-4">
@@ -155,7 +156,7 @@
                   De mogelijkheden zijn enorm, van mozaïek tot xl tegels, het kan tegenwoordig allemaal. Wij helpen u graag verder met uw afwerking van A tot Z. 
                 </p>
               </div>
-              <div class="bg-white p-6 shadow-lg rounded">
+              <div class="bg-white text-black p-6 shadow-lg rounded">
                 <img src="images/buzon-icon.png" alt="Buzon logo" class="mx-auto mb-4 h-16 w-16">
                 <h3 class="text-xl font-bold">Terrassen op tegeldragers</h3>
                 <p class="mt-4">
@@ -165,22 +166,23 @@
                   Wij kijken graag met u wat mogelijk is!
                 </p>
               </div>
-              <div class="bg-white p-6 shadow-lg rounded">
-                <img src="images/hammer-icon.png" alt="Uitbreken logo" class="mx-auto mb-4 h-16 w-16">
-                <h3 class="text-xl font-bold">Uitbreken tegelwerk</h3>
-                <p class="mt-4">
-                  U wil als eerste stap uw binnen bevloering/badkamer/terras laten uitbreken, wij doen dit graag voor u.
-                </p>
-              </div>
             </div>
           </div>
         </section>
         
-        <section class="bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('images/dakterras-foto-1.jpg');">
-          </section>
+        <section id="flooring-gallery" class="py-8" style="background-color: rgb(50, 50, 53);" >
+          <div class="container mx-auto text-center">
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+              <a href="/public/images/terraces-driveways/terras-omi2.jpg" data-lightbox="flooring5" data-title="Binnenvloer 1" class="overflow-hidden">
+                <img src="/public/images/terraces-driveways/terras-omi2.jpg" alt="Binnenvloer parket" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+            </div>
+          </div>
+        </section>
 
         <!-- Why Choose Us Section -->
-        <section id="why" class="py-16 px-4">
+        <section id="why" class="py-16 px-4 text-white" style="background-color: rgb(90, 90, 93);"> 
             <div class="container mx-auto text-center">
               <h2 class="text-3xl font-bold mb-6">Waarom kiezen voor Vloerwerken Delaere?</h2>
               <p class="mx-auto mb-4 max-w-2xl">
@@ -188,7 +190,7 @@
                 wij zijn zeer flexibel en steeds strevend naar klanttevredenheid.
               </p>
               <a href="offer.html">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">
+                <button class="text-white hover:text-gray-200 py-2 px-6 rounded" style="background-color: rgb(37, 49, 138);">
                   <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
                 </button>
               </a>
@@ -196,25 +198,27 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 px-4 bg-gray-800">
+        <section id="contact" class="py-16 px-4" style="background-color: rgb(47, 62, 173);">
           <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6 text-white">Contact</h2>
             <p class="mb-4 text-white">Contacteer ons voor vragen of een gratis offerte!
             </p>
             <a href="contact.html">
-              <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">
+              <button class="hover:bg-blue-700 text-white hover:text-gray-200 py-2 px-6 rounded" style="background-color: rgb(37, 49, 138);">
                 <b>Contacteer <i class="material-icons" style="vertical-align: middle;">mail</i></b>
               </button>
             </a>
           </div>
         </section>
 
-        <section class="bg-blue-600 text-white py-8">
+        <section class="bg-blue-600 text-white py-8" style="background-color: rgb(41, 41, 43);">
             <div class="container mx-auto px-4 flex justify-between items-center text-center">
               <!-- Logo -->
               <div>
-                <div class="text-2xl font-bold">
-                  <a href="#">Logo</a>
+                <div class="flex items-center px-6">
+                  <a href="index.html">
+                    <img src="images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-24 w-auto">
+                  </a>
                 </div>
                 <strong class=" mt-2">Uw droom, onze passie</strong>
               </div>
@@ -253,7 +257,7 @@
          </section>
       </main>
 
-      <footer class="bg-gray-800 text-white py-8">
+      <footer class="text-white py-8" style="background-color: rgb(47, 62, 173);">
         <div class="container mx-auto flex justify-between items-center">
           <p class="text-sm">
             Copyright &copy; 2024 Vloerwerken Delaere. All rights reserved.
