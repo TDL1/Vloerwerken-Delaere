@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="../../node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="../js/script.js"></script>
     <title>Contact</title>
 </head>
@@ -58,18 +60,61 @@
         <!-- Hero Section -->
         <section id="hero" class="bg-cover bg-center h-64 flex items-center justify-center text-white" style="background-image: url('../images/vloer-foto-1.jpg');">
             <div class="text-center">
-                <h1 class="font-bold" style="font-size: 72px;">Wandtegels/Mozaïek</h1>
-                <p class="mt-3 text-xl">Contacteer ons voor vragen of een gratis offerte!</p>
+              <h1 class="font-bold" style="font-size: 72px;">Wandtegels/Mozaïek</h1>
+              <p class="mt-3 text-xl">Contacteer ons voor vragen of een gratis offerte!</p>
             </div>
-        </section>
-
-        <section id="about" class="py-16 px-4 bg-gray-300">
-          <div class="container mx-auto text-center">
+          </section>
+          
+          <section id="about" class="py-16 px-4 bg-gray-300">
+            <div class="container mx-auto text-center">
               <p class="max-w-2xl mx-auto">
                 Wij plaatsen uw muurtegels, badkamer, keuken, of toch iets helemaal anders, wij kijken graag met u naar de best mogelijke oplossing naargelang de ruimte, budget en smaak. 
               </p>
+            </div>
+          </section>
+
+          <section id="flooring-gallery" class="py-8 bg-gray-200">
+            <div class="container mx-auto text-center">
+              <h2 class="text-2xl font-bold mb-6">Wandtegels/Mozaïek - mozaiëk douche</h2>
+  
+              <!-- Image Grid -->
+              <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <a href="../images/walltiles-mozaic/inloopdouch-vloer+wand parket tegel 2.jpg" data-lightbox="mozaic3" data-title="Mozaic 1" class="overflow-hidden">
+                  <img src="../images/walltiles-mozaic/inloopdouch-vloer+wand parket tegel 2.jpg" alt="Mozaic" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+                </a>
+                <a href="../images/walltiles-mozaic/inloopdouch-vloer+wand parket tegel.jpg" data-lightbox="mozaic3" data-title="Mozaic 2" class="overflow-hidden">
+                  <img src="../images/walltiles-mozaic/inloopdouch-vloer+wand parket tegel.jpg" alt="Mozaic" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+                </a>
+              </div>
+            </div>
+          </section>
+          
+        <section id="flooring-gallery" class="py-8 bg-gray-200">
+          <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Wandtegels/Mozaïek - mozaiëk douche</h2>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+              <a href="../images/walltiles-mozaic/mozaic-1.5x1.5.jpg" data-lightbox="mozaic1" data-title="Mozaic 1" class="overflow-hidden">
+                <img src="../images/walltiles-mozaic/mozaic-1.5x1.5.jpg" alt="Mozaic" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+            </div>
           </div>
         </section>
+
+        <section id="flooring-gallery" class="py-8 bg-gray-200">
+          <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Wandtegels/Mozaïek - mozaiëk douche retrolook</h2>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+              <a href="../images/walltiles-mozaic/retrolook+metrowandtegels.jpg" data-lightbox="mozaic2" data-title="Mozaic 1" class="overflow-hidden">
+                <img src="../images/walltiles-mozaic/retrolook+metrowandtegels.jpg" alt="Mozaic" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+            </div>
+          </div>
+        </section>
+
 
         <!-- Why Choose Us Section -->
         <section id="why" class="py-16 px-4">
@@ -79,9 +124,11 @@
                 Waarom zou u kiezen voor ons wij gaan steeds vol voor een mooi resulaat naar uw smaak en budget, bij ons is een woord een woord en houden we u niet aan het lijntje
                 wij zijn zeer flexibel en steeds strevend naar klanttevredenheid.
               </p>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">
-                <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
-              </button>
+              <a href="../offer.html">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4">
+                  <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
+                </button>
+            </a>
             </div>
         </section>
 
