@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Contact</title>
 </head>
 <body class="font-proxima">
@@ -111,29 +112,29 @@
                 <!-- Right Pane: Contact Form -->
                 <div class="bg-white px-32 py-6">
                     <h3 class="text-2xl font-bold mb-4">Stuur ons een bericht</h3>
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false;">
                         <!-- Name -->
                         <div class="mb-4">
                             <label for="name" class="block text-gray-700">Naam</label>
-                            <input type="text" id="name" name="name" placeholder="Uw naam" class="p-2 border rounded" />
+                            <input type="text" id="name" name="name" placeholder="Uw naam" required class="p-2 pr-8 border rounded" />
                         </div>
                         <!-- Email -->
                         <div class="mb-4">
                             <label for="email" class="block text-gray-700">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Uw e-mailadres" class="p-2 border rounded" />
+                            <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required class="p-2 pr-8 border rounded" />
                         </div>
                         <!-- Phone -->
                         <div class="mb-4">
                             <label for="phone" class="block text-gray-700">Telefoonnummer</label>
-                            <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer" class="p-2 border rounded" />
+                            <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer" required class="p-2 pr-8 border rounded" />
                           </div>
                         <!-- Message -->
                         <div class="mb-4">
                             <label for="message" class="block text-gray-700">Bericht</label>
-                            <textarea id="message" name="message" rows="8" cols="40" placeholder="Uw bericht" class="p-2 border border-black"></textarea>
+                            <textarea id="message" name="message" rows="6" cols="40" placeholder="Uw bericht" required class="p-2 border border-black"></textarea>
                         </div>
                         <div class="mb-4">
-                          <button type="submit" class="hover:text-gray-200 text-white py-2 px-20 rounded" style="background-color: rgb(37, 49, 138);">
+                          <button type="submit" class="hover:text-gray-200 text-white py-2 px-24 rounded" style="background-color: rgb(37, 49, 138);">
                               Verstuur
                           </button>
                         </div>
