@@ -11,7 +11,7 @@ function openVideo() {
     Email.send({
         Host : "smtp.gmail.com",
         Username : "tristandelaere19@gmail.com",
-        Password : "Trisdel12",
+        Password : "",
         To : 'tristandelaere19@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
