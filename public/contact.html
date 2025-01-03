@@ -8,6 +8,16 @@
     <script src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Contact</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function ()
+      {
+        emailjs.init({
+          publicKey: "RbdU9YtdgPr-bp4NC",
+        });
+      })();
+    </script>
 </head>
 <body class="font-proxima">
   <header>
@@ -112,7 +122,7 @@
                 <!-- Right Pane: Contact Form -->
                 <div class="bg-white px-32 py-6">
                     <h3 class="text-2xl font-bold mb-4">Stuur ons een bericht</h3>
-                    <form onsubmit="sendEmail(); reset(); return false;">
+                    <form>
                         <!-- Name -->
                         <div class="mb-4">
                             <label for="name" class="block text-gray-700">Naam</label>
@@ -124,17 +134,17 @@
                             <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required class="p-2 pr-8 border rounded" />
                         </div>
                         <!-- Phone -->
-                        <div class="mb-4">
+                        <!-- <div class="mb-4">
                             <label for="phone" class="block text-gray-700">Telefoonnummer</label>
                             <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer" required class="p-2 pr-8 border rounded" />
-                          </div>
+                          </div> -->
                         <!-- Message -->
                         <div class="mb-4">
                             <label for="message" class="block text-gray-700">Bericht</label>
                             <textarea id="message" name="message" rows="6" cols="40" placeholder="Uw bericht" required class="p-2 border border-black"></textarea>
                         </div>
                         <div class="mb-4">
-                          <button type="submit" class="hover:text-gray-200 text-white py-2 px-24 rounded" style="background-color: rgb(37, 49, 138);">
+                          <button onclick="sendEmail()" type="submit" class="hover:text-gray-200 text-white py-2 px-24 rounded" style="background-color: rgb(37, 49, 138);">
                               Verstuur
                           </button>
                         </div>
