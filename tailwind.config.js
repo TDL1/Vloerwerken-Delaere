@@ -6,6 +6,11 @@ module.exports = {
       fontFamily: {
         proxima: ['Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
+      screens: {
+        // Add custom max-width media query for 700px
+        'max-md': { 'max': '767px' },
+        'max-sm': { 'max': '639px' },
+      },
     },
   },
   plugins: [
