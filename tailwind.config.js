@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        proxima: ['Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        wallpoet: ['Wallpoet', 'sans-serif'],
       },
       screens: {
         // Add custom max-width media query for 700px

@@ -5,58 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Contact</title>
 </head>
-<body class="font-proxima">
-    <header>
-      <nav class="text-white py-2" style="background-color: rgb(41, 41, 43);">
-        <div class="container mx-auto flex justify-center">
-              <!-- Logo -->
-              <div class="flex items-center px-28">
-                <a href="index.html">
-                  <img src="images/vloerwerkenlogosupercut.jpg" alt="Vloerwerken Logo" class="h-32 w-auto">
-                </a>
-              </div>
-          
-              <!-- Navigation Links -->
-              <div class="flex items-center px-28">
-                <ul class="flex space-x-6">
-                  <li><a href="index.html" class="hover:text-gray-500 px-4">HOME</a></li>
-                  <li><a href="services.html" class="hover:text-gray-500 px-4">DIENSTEN</a></li>
-                  <li><a href="../public/index.html#aboutnav" class="hover:text-gray-500 px-4">OVER ONS</a></li>
-                  <li><a href="contact.html" class="hover:text-gray-500 px-4">CONTACT</a></li>
-                </ul>
-              </div>
-          
-              <!-- Quick Action Button -->
-              <div class="flex items-center px-24">
-                <a href="offer.html">
-                  <button class="hover:text-gray-200 text-white py-2 px-4" style="background-color: rgb(37, 49, 138);">
-                    <b>Vraag gratis offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </nav>
-    </header>
+<body class="font-wallpoet">
+  <header class="px-4 shadow" style="background-color: rgb(41, 41, 43);">
+    <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between" style="background-color: rgb(41, 41, 43);">
+      <a class="flex items-center text-2xl font-black" href="index.html">
+        <span class="mr-2 text-3xl text-blue-600">
+          <img src="images/vloerwerkenlogosupercut.jpg" alt="Vloerwerken Logo" role="img" class="sm:w-16 sm:h-16 w-8 h-8">
+        </span>
+      </a>
+      <input class="peer hidden" type="checkbox" id="navbar-open" />
+      <label class="absolute right-0 mt-1 cursor-pointer text-xl sm:hidden" for="navbar-open">
+        <span class="sr-only">Toggle Navigation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+          <path fill="white" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </label>
+      <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+        <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-7 md:gap-x-12 lg:gap-x-16 xl:gap-x-20">
+          <li><a href="index.html" class="hover:text-gray-500 text-white">Home</a></li>
+          <li><a href="services.html" class="hover:text-gray-500 text-white">Diensten</a></li>
+          <li><a href="#aboutnav" class="hover:text-gray-500 text-white">Over ons</a></li>
+          <li><a href="contact.html" class="hover:text-gray-500 text-white">Contact</a></li>
+          <li class="mt-2 sm:mt-0">
+            <a class="rounded px-3 py-2 text-white hover:text-gray-300" href="offer.html" style="background-color: rgb(37, 49, 138);">
+              <b>Vraag offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main class="bg-gray-100 text-gray-800 ">
       <section>
         <nav class="bg-gray-800 text-white py-6" style="background-color: rgb(146, 174, 180);">
-            <div class="container mx-auto px-4 flex justify-center items-center py-0">
-              <!-- Navigation Links -->
-              <ul class="flex space-x-8 items-center">
-                <li><a href="services/flooring.html" class="hover:text-blue-400">Vloeren</a></li>
-                <li><a href="services/walltiles-mozaic.html" class="hover:text-blue-400">Wandtegels/Mozaïek</a></li>
-                <li><a href="services/terraces-driveways.html" class="hover:text-blue-400">Terras/Oprit</a></li>
-                <li><a href="services/bathrooms.html" class="hover:text-blue-400">Badkamers</a></li>
-                <li><a href="services/terraces-carriers.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
-              </ul>
-            </div>
-          </nav>
-    </section>
+          <div class="container mx-auto flex justify-center items-center max-w-full">
+            <!-- Navigation Links -->
+            <ul class="flex max-md:hidden md:gap-x-8 lg:gap-x-12 xl:gap-x-16 items-center">
+              <li><a href="services/flooring.html" class="hover:text-blue-400">Vloeren</a></li>
+              <li><a href="services/walltiles-mozaic.html" class="hover:text-blue-400">Wandtegels/Mozaïek</a></li>
+              <li><a href="services/terraces-driveways.html" class="hover:text-blue-400">Terras/Oprit</a></li>
+              <li><a href="services/bathrooms.html" class="hover:text-blue-400">Badkamers</a></li>
+              <li><a href="services/terraces-carriers.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
+            </ul>
+
+            <ul class="pl-5 grid max-sm:grid-cols-3 gap-y-4 max-md:items-center md:hidden">
+              <li><a href="services/flooring.html" class="hover:text-blue-400">Vloeren</a></li>
+              <li><a href="services/walltiles-mozaic.html" class="hover:text-blue-400">Wandtegels/Mozaïek</a></li>
+              <li><a href="services/terraces-driveways.html" class="hover:text-blue-400 max-sm:pl-5">Terras/Oprit</a></li>
+              <li><a href="services/bathrooms.html" class="hover:text-blue-400">Badkamers</a></li>
+              <li><a href="services/terraces-carriers.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
 
         <!-- Hero Section -->
         <section id="hero" class="bg-cover bg-center h-80 flex items-center justify-center text-white" style="background-image: url('images/terraces-carriers/tegeldragers-keramiek-60x60x2.jpg');">
@@ -69,21 +78,21 @@
         <section id="aboutnav" class="text-white flex py-6" style="background-color: rgb(146, 174, 180);">
           <div class="container mx-auto flex justify-center">
             <!-- First Keyword and Logo -->
-            <div class="flex items-center px-28">
-              <img src="images/knowledge-icon.png" alt="Logo 1" class="w-12 h-12">
-              <p>Uitgebreide kennis</p>
+            <div class="flex items-center px-8 sm:px-20 md:px-28">
+              <img src="images/knowledge-icon.png" alt="Logo 1" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 ssm:text-sm md:text-base lg:text-lg">Uitgebreide kennis</p>
             </div>
         
             <!-- Second Keyword and Logo -->
-            <div class="flex items-center px-28">
-              <img src="images/azworks-icon.png" alt="Logo 2" class="w-12 h-12">
-              <p>Werken van A tot Z</p>
+            <div class="flex items-center sm:px-20 md:px-28">
+              <img src="images/azworks-icon.png" alt="Logo 2" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 sm:text-sm md:text-base lg:text-lg">Werken van A tot Z</p>
             </div>
         
             <!-- Third Keyword and Logo -->
-            <div class="flex items-center px-28">
-              <img src="images/experience-icon.png" alt="Logo 3" class="w-12 h-12">
-              <h3>20 jaar ervaring</h3>
+            <div class="flex items-center px-8 sm:px-20 md:px-28">
+              <img src="images/experience-icon.png" alt="Logo 3" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 sm:text-sm md:text-base lg:text-lg">20 jaar ervaring</p>
             </div>
           </div>
         </section>
@@ -176,11 +185,12 @@
           </div>
         </section>
 
-        <section class="bg-blue-600 text-white py-8" style="background-color: rgb(41, 41, 43);">
+        <!-- lg bottom nav section  -->
+        <section class="bg-blue-600 text-white py-8 max-md:hidden" style="background-color: rgb(41, 41, 43);">
           <div class="container mx-auto px-4 flex justify-between items-center text-center">
             <!-- Logo -->
             <div>
-              <div class="flex items-center px-6">
+              <div class="flex items-center pl-6">
                 <a href="index.html">
                   <img src="images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-24 w-auto">
                 </a>
@@ -220,14 +230,117 @@
             </div>
           </div>
        </section>
+
+       <!-- md bottom nav section -->
+       <section class="bg-blue-600 text-white py-8 md:hidden max-sm:hidden" style="background-color: rgb(41, 41, 43);">
+        <div class="container mx-auto px-4 flex justify-between items-center text-center">
+          <!-- Logo -->
+          <div>
+            <div class="flex items-center pl-6">
+              <a href="index.html">
+                <img src="images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-12 w-12">
+              </a>
+            </div>
+            <strong class="mt-2" style="font-size: 11px;">Uw droom, onze passie</strong>
+          </div>
+      
+          <!-- Navigation Links -->
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 11px;">
+            <li class="py-2"><a href="index.html" class="hover:text-gray-300"><b>Home</b></a></li>
+            <li class="py-2"><a href="services.html" class="hover:text-gray-300"><b>Diensten</b></a></li>
+            <li class="py-2"><a href="about.html" class="hover:text-gray-300"><b>Over ons</b></a></li>
+            <li class="py-2"><a href="contact.html" class="hover:text-gray-300"><b>Contact</b></a></li>
+          </ul>
+
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 11px;">
+              <li class="py-2"><a href="services/flooring.html" class="hover:text-gray-300"><b>Vloeren</b></a></li>
+              <li class="py-2"><a href="services/walltiles-mozaic.html" class="hover:text-gray-300"><b>Wandtegels/Mozaïek</b></a></li>
+              <li class="py-2"><a href="services/terraces-driveways.html" class="hover:text-gray-300"><b>Terras/Oprit</b></a></li>
+          </ul>
+
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 11px;">
+            <li class="py-2"><a href="services/bathrooms.html" class="hover:text-gray-300"><b>Badkamers</b></a></li>
+            <li class="py-2"><a href="services/terraces-carriers.html" class="hover:text-gray-300"><b>Terrassen op tegeldragers</b></a></li>
+            <li class="py-2"><a href="services/mozaic.html" class="hover:text-gray-300"><b>Uitbreken tegelwerk</b></a></li>
+          </ul>
+      
+          <!-- Contact Info -->
+          <div  style="font-size: 11px;">
+            <p>Vloer/Tegelwerken Delaere Kenny</p>
+            <p>&nbsp;</p>
+            <p>Frederik Moddestraat 14, 8210 Zedelgem</p>
+            <p>West-Vlaanderen, België</p>
+            <p>&nbsp;</p>
+            <p><b>+32 474 70 85 34</b></p>
+            <p><b>kenny.delaere12@telenet.be</b></p>
+          </div>
+        </div>
+     </section>
+
+      <!-- sm bottom nav section -->
+       <section class="bg-blue-600 text-white py-8 sm:hidden" style="background-color: rgb(41, 41, 43);">
+        <div class="container mx-auto px-4 flex justify-between items-center text-center">
+          <!-- Logo -->
+          <div>
+            <div class="flex items-center pl-1">
+              <a href="index.html">
+                <img src="images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-8 w-8">
+              </a>
+            </div>
+            <strong class=" mt-2" style="font-size: 9px;">Uw droom, onze passie</strong>
+          </div>
+      
+          <!-- Navigation Links -->
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 9px;">
+            <li class="py-2"><a href="index.html" class="hover:text-gray-300"><b>Home</b></a></li>
+            <li class="py-2"><a href="services.html" class="hover:text-gray-300"><b>Diensten</b></a></li>
+            <li class="py-2"><a href="about.html" class="hover:text-gray-300"><b>Over ons</b></a></li>
+            <li class="py-2"><a href="contact.html" class="hover:text-gray-300"><b>Contact</b></a></li>
+          </ul>
+
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 9px;">
+              <li class="py-2"><a href="services/flooring.html" class="hover:text-gray-300"><b>Vloeren</b></a></li>
+              <li class="py-2"><a href="services/walltiles-mozaic.html" class="hover:text-gray-300"><b>Wandtegels/Mozaïek</b></a></li>
+              <li class="py-2"><a href="services/terraces-driveways.html" class="hover:text-gray-300"><b>Terras/Oprit</b></a></li>
+          </ul>
+
+          <ul class="ml-4 mt-2 space-y-2" style="font-size: 9px;">
+            <li class="py-2"><a href="services/bathrooms.html" class="hover:text-gray-300"><b>Badkamers</b></a></li>
+            <li class="py-2"><a href="services/terraces-carriers.html" class="hover:text-gray-300"><b>Terrassen op tegeldragers</b></a></li>
+            <li class="py-2"><a href="services/mozaic.html" class="hover:text-gray-300"><b>Uitbreken tegelwerk</b></a></li>
+          </ul>
+      
+          <!-- Contact Info -->
+          <div style="font-size: 9px;">
+            <p>Vloer/Tegelwerken Delaere Kenny</p>
+            <p>&nbsp;</p>
+            <p>Frederik Moddestraat 14, 8210 Zedelgem</p>
+            <p>West-Vlaanderen, België</p>
+            <p>&nbsp;</p>
+            <p><b>+32 474 70 85 34</b></p>
+            <p><b>kenny.delaere12@telenet.be</b></p>
+          </div>
+        </div>
+     </section>
     </main>
 
-    <footer class="text-white py-8" style="background-color: rgb(128, 173, 183);">
-      <div class="container mx-auto flex justify-between items-center">
+    <footer class="text-white py-8 max-md:hidden" style="background-color: rgb(128, 173, 183);">
+      <div class="container mx-auto flex justify-between items-center px-2">
         <p class="text-sm">
           Copyright &copy; 2024 Vloerwerken Delaere. All rights reserved.
         </p>
         <p class="text-sm">
+          Website gemaakt door Delaere Tristan
+        </p>
+      </div>
+    </footer>
+
+    <footer class="text-white py-4 md:hidden" style="background-color: rgb(128, 173, 183);">
+      <div class="flex justify-between items-center px-2">
+        <p class="" style="font-size: 8px;">
+          Copyright &copy; 2024 Vloerwerken Delaere. All rights reserved.
+        </p>
+        <p class=""  style="font-size: 8px;">
           Website gemaakt door Delaere Tristan
         </p>
       </div>
