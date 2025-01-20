@@ -19,6 +19,10 @@ module.exports = {
         '.h-128': {
           height: '36rem',
         },
+        '.text-xxs': {
+          'font-size': '0.5rem',
+          'line-height': '0.75rem',
+        },
       });
     },
   ],
