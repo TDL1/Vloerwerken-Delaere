@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Vloerwerken Delaere</title>
+    <link rel="icon" href="../images/vloerwerkenlogosupercut.JPG" type="image/png">
+</head>
+<body class="font-wallpoet">
+  <header class="md:px-4 shadow" style="background-color: rgb(41, 41, 43);">
+    <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 md:flex-row md:items-center md:justify-between" style="background-color: rgb(41, 41, 43);">
+      <a class="flex items-center text-2xl font-black max-md:px-4" href="../index.html">
+        <span class="mr-2 text-3xl text-blue-600">
+          <img src="../images/vloerwerkenlogosupercut.jpg" alt="Vloerwerken Logo" role="img" class="sm:w-16 sm:h-16 w-10 h-10">
+        </span>
+      </a>
+      <input class="peer hidden" type="checkbox" id="navbar-open" />
+      <label class="absolute right-0 cursor-pointer text-xl md:hidden px-4 mt-2" for="navbar-open">
+        <span class="sr-only">Toggle Navigation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+          <path fill="white" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </label>
+      <nav aria-label="Header Navigation" class="peer-checked:block hidden py-6 md:block md:py-0">
+        <ul class="flex flex-col gap-y-4 md:flex-row sm:gap-x-7 md:gap-x-7 lg:gap-x-16 max-md:px-4">
+          <li><a href="../index.html" class="hover:text-gray-500 text-white">Home</a></li>
+          <li><a href="../diensten/index.html" class="hover:text-gray-500 text-white">Diensten</a></li>
+          <li><a href="../index.html#aboutnav" class="hover:text-gray-500 text-white">Over ons</a></li>
+          <li><a href="../contact/index.html" class="hover:text-gray-500 text-white">Contact</a></li>
+          <li class="mt-2 sm:mt-0">
+            <a class="rounded px-3 py-2 text-white hover:text-gray-300" href="../offerte/index.html" style="background-color: rgb(37, 49, 138);">
+              <b>Vraag offerte aan <i class="material-icons" style="vertical-align: middle;">start</i></b>
+            </a>
+          </li>
+        </ul>
+
+          <ul class="mt-5 peer-checked:block md:hidden flex flex-col gap-y-4 md:flex-row sm:gap-x-7 md:gap-x-12 lg:gap-x-16 xl:gap-x-20 max-md:px-4  text-white py-6" style="background-color: rgb(146, 174, 180);">
+            <li><a href="../diensten/vloeren/index.html" class="hover:text-blue-400">Vloeren</a></li>
+            <li><a href="../diensten/wandtegelsmozaïek/index.html" class="hover:text-blue-400">Wandtegels/Mozaïek</a></li>
+            <li><a href="../diensten/terrasoprit/index.html" class="hover:text-blue-400">Terras/Oprit</a></li>
+            <li><a href="../diensten/badkamers/index.html" class="hover:text-blue-400">Badkamers</a></li>
+            <li><a href="../diensten/tegeldragers/index.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main class="bg-gray-100 text-gray-800 ">
+      <section>
+        <nav class="bg-gray-800 text-white py-6" style="background-color: rgb(146, 174, 180);">
+          <div class="container mx-auto flex justify-center items-center max-w-full">
+            <!-- Navigation Links -->
+            <ul class="flex max-md:hidden sm:gap-x-8 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 items-center lg:text-sm md:text-xs">
+              <li><a href="../diensten/vloeren/index.html" class="hover:text-blue-400">Vloeren</a></li>
+              <li><a href="../diensten/wandtegelsmozaïek/index.html" class="hover:text-blue-400">Wandtegels/Mozaïek</a></li>
+              <li><a href="../diensten/terrasoprit/index.html" class="hover:text-blue-400">Terras/Oprit</a></li>
+              <li><a href="../diensten/badkamers/index.html" class="hover:text-blue-400">Badkamers</a></li>
+              <li><a href="../diensten/tegeldragers/index.html" class="hover:text-blue-400">Terrassen op tegeldragers</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+        <!-- Hero Section -->
+        <section id="hero" class="bg-cover bg-center h-80 flex items-center justify-center text-white" style="background-image: url('../images/terraces-carriers/tegeldragers-keramiek-60x60x2.jpg');">
+            <div class="text-center max-md:hidden">
+                <h1 class="font-bold" style="font-size: 72px;">Vraag gratis een offerte aan</h1>
+                <p class="mt-3 text-xl">Wij trachten steeds binnen 3 werkdagen te antwoorden op uw aanvragen.</p>
+            </div>
+            <div class="text-center md:hidden">
+              <h1 class="font-bold" style="font-size: 44px;">Vraag gratis een offerte aan</h1>
+              <p class="mt-3 text-xl">Wij trachten steeds binnen 3 werkdagen te antwoorden op uw aanvragen.</p>
+            </div>
+        </section>
+
+        <section id="aboutnav" class="text-white flex py-6" style="background-color: rgb(146, 174, 180);">
+          <div class="container mx-auto flex justify-center">
+            <!-- First Keyword and Logo -->
+            <div class="flex items-center px-6 sm:px-20 md:px-28">
+              <img src="../images/knowledge-icon.png" alt="Logo 1" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 max-sm:text-xs sm:text-xs md:text-xs lg:text-base">Uitgebreide kennis</p>
+            </div>
+        
+            <!-- Second Keyword and Logo -->
+            <div class="flex items-center sm:px-20 md:px-28">
+              <img src="../images/azworks-icon.png" alt="Logo 2" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 max-sm:text-xs sm:text-xs md:text-xs lg:text-base">Werken van A tot Z</p>
+            </div>
+        
+            <!-- Third Keyword and Logo -->
+            <div class="flex items-center px-6 sm:px-20 md:px-28">
+              <img src="../images/experience-icon.png" alt="Logo 3" class="w-6 h-6 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-12 lg:h-12">
+              <p class="px-2 max-sm:text-xs sm:text-sm md:text-base">20 jaar ervaring</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="bg-gray-800">
+          <div class="container mx-auto p-8 max-w-4xl">
+              <div class="bg-white p-6 rounded shadow-md">
+                  <h3 class="text-2xl font-bold mb-4 text-gray-800 max-sm:text-xl max-sm:mb-2">Offerte Aanvragen</h3>
+                  <form>
+                      <!-- Name -->
+                      <div class="mb-4">
+                          <label for="name" class="block text-gray-700 max-sm:text-sm">Naam</label>
+                          <input type="text" id="name" name="name" placeholder="Uw naam" class="w-full p-2 border rounded max-sm:text-sm" required />
+                      </div>
+      
+                      <!-- Phone -->
+                      <div class="mb-4">
+                          <label for="phone" class="block text-gray-700 max-sm:text-sm">Telefoonnummer</label>
+                          <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer" class="w-full p-2 border rounded max-sm:text-sm" required />
+                      </div>
+      
+                      <!-- Email -->
+                      <div class="mb-4">
+                          <label for="email" class="block text-gray-700 max-sm:text-sm">E-mail</label>
+                          <input type="email" id="email" name="email" placeholder="Uw e-mailadres" class="w-full p-2 border rounded max-sm:text-sm" required />
+                      </div>
+      
+                      <!-- Location -->
+                      <div class="mb-4">
+                          <label for="location" class="block text-gray-700 max-sm:text-sm">Locatie project</label>
+                          <input type="text" id="location" name="location" placeholder="Locatie van het project" class="w-full p-2 border rounded max-sm:text-sm" required />
+                      </div>
+      
+                      <!-- Services -->
+                      <div class="mb-4">
+                          <label class="block text-gray-700 max-sm:text-sm">Selecteer diensten</label>
+                          <div class="flex flex-wrap space-y-2 md:space-y-0 md:space-x-4">
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="vloeren" />
+                                  <span>Vloeren</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="wandtegels" />
+                                  <span>Wandtegels</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="badkamers" />
+                                  <span>Badkamers</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="opritten" />
+                                  <span>Opritten</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="terassen" />
+                                  <span>Terrassen</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="mozaiek" />
+                                  <span>Mozaïek</span>
+                              </label>
+                          </div>
+                      </div>
+      
+                      <!-- Description -->
+                      <div class="mb-4">
+                          <label for="description" class="block text-gray-700 max-sm:text-sm">Beschrijving</label>
+                          <textarea id="description" name="description" rows="4" placeholder="Geef een korte beschrijving van uw project" class="w-full p-2 border rounded max-sm:text-sm" required></textarea>
+                      </div>
+      
+                      <!-- Submit Button -->
+                      <div class="mb-4">
+                          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full max-sm:text-sm">
+                              Vraag offerte aan
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4" style="background-color: rgb(146, 174, 180);">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Contact</h2>
+            <p class="mb-4 text-white">Contacteer ons voor vragen of een gratis offerte!
+            </p>
+            <a href="../contact/index.html">
+              <button class="hover:bg-blue-700 text-white hover:text-gray-200 py-2 px-6 rounded" style="background-color: rgb(37, 49, 138);">
+                <b>Contacteer <i class="material-icons" style="vertical-align: middle;">mail</i></b>
+              </button>
+            </a>
+          </div>
+        </section>
+
+        <section class="bg-blue-600 text-white py-8" style="background-color: rgb(41, 41, 43);">
+          <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-center">
+            <!-- Logo -->
+            <div class="flex flex-col items-center text-center mb-4 sm:mb-0">
+              <a href="../index.html">
+                <img src="../images/vloerwerkenlogosupercut.JPG" alt="Vloerwerken Logo" class="h-16 w-16 sm:h-12 sm:w-12 xs:h-8 xs:w-8">
+              </a>
+              <strong class="mt-2 sm:text-xxs md:text-xs lg:text-base">Uw droom, onze passie</strong>
+            </div>
+        
+            <!-- Navigation Links -->
+            <ul class="space-y-2 text-sm sm:text-xxs md:text-xs lg:text-base mb-4 sm:mb-0">
+              <li class="py-2"><a href="../index.html" class="hover:text-gray-300"><b>Home</b></a></li>
+              <li class="py-2"><a href="../diensten/index.html" class="hover:text-gray-300"><b>Diensten</b></a></li>
+              <li class="py-2"><a href="../index.html#aboutnav" class="hover:text-gray-300"><b>Over ons</b></a></li>
+              <li class="py-2"><a href="../contact/index.html" class="hover:text-gray-300"><b>Contact</b></a></li>
+            </ul>
+        
+            <ul class="space-y-2 text-sm sm:text-xxs md:text-xs lg:text-base mb-4 sm:mb-0 max-md:px-2">
+              <li class="py-2"><a href="../diensten/vloeren/index.html" class="hover:text-gray-300"><b>Vloeren</b></a></li>
+              <li class="py-2"><a href="../diensten/wandtegelsmozaïek/index.html" class="hover:text-gray-300"><b>Wandtegels/Mozaïek</b></a></li>
+              <li class="py-2"><a href="../diensten/terrasoprit/index.html" class="hover:text-gray-300"><b>Terras/Oprit</b></a></li>
+            </ul>
+        
+            <ul class="space-y-2 text-sm sm:text-xxs md:text-xs lg:text-base mb-4 sm:mb-0">
+              <li class="py-2"><a href="../diensten/badkamers/index.html" class="hover:text-gray-300"><b>Badkamers</b></a></li>
+              <li class="py-2"><a href="../diensten/tegeldragers/index.html" class="hover:text-gray-300"><b>Terrassen op tegeldragers</b></a></li>
+            </ul>
+        
+            <!-- Contact Info -->
+            <div class="text-sm sm:text-xxs md:text-xs lg:text-base">
+              <p>Vloer/Tegelwerken Delaere Kenny</p>
+              <p>&nbsp;</p>
+              <p>Frederik Moddestraat 14, 8210 Zedelgem</p>
+              <p>West-Vlaanderen, België</p>
+              <p>&nbsp;</p>
+              <p>+32 474 70 85 34</p>
+              <p>kenny.delaere12@telenet.be</p>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="text-white py-8" style="background-color: rgb(128, 173, 183);">
+          <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <!-- Copyright Text -->
+            <p class="text-sm md:text-xs sm:text-xxs w-full md:w-auto">
+              Copyright &copy; 2025 Vloerwerken Delaere. All rights reserved.
+            </p>
+            <!-- Website Info Text -->
+            <p class="text-sm md:text-xs sm:text-xxs w-full md:w-auto mt-4 md:mt-0 text-center md:text-left">
+              Website gemaakt door Delaere Tristan
+            </p>
+          </div>
+        </footer>
+</body>
+</html>
