@@ -70,7 +70,7 @@
       </section>
       
         <!-- Hero Section -->
-        <section id="hero" class="bg-cover bg-center h-80 flex items-center justify-center text-white" style="background-image: url('../../images/bathrooms/badkamer.jpg');">
+        <section id="hero" class="bg-cover bg-center h-80 flex items-center justify-center text-white" style="background-image: url('../../images/bathrooms/hoofdfotobadkamers.jpg');">
           <div class="text-center max-md:hidden">
               <h1 class="font-bold" style="font-size: 72px;">Badkamers</h1>
               <p class="mt-3 text-xl">Contacteer ons voor vragen of een gratis offerte!</p>
@@ -92,26 +92,74 @@
           </div>
         </section>
 
-        <section id="flooring-gallery" class="py-8 bg-gray-200">
+        <section id="video-gallery" class="py-8 bg-gray-200">
+          <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Badkamers - Inloopdouche video</h2>
+            <!-- Video Thumbnail -->
+            <div class="flex justify-center">
+              <a href="#video-lightbox" class="overflow-hidden" onclick="openVideo()">
+                <img src="../../images/bathrooms/douchethumnbnailplaybutton.PNG" alt="Video Thumbnail" class="hover:scale-110 transition-transform duration-300 h-full object-cover aspect-[16/9]" style="max-width: 25rem;">
+              </a>
+            </div>
+          </div>
+          
+          <!-- Lightbox Modal -->
+          <div id="video-lightbox" class="hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+            <div class="relative max-w-4xl mx-auto">
+              <video controls autoplay class="w-full h-auto">
+                <source src="../../images/bathrooms/douchvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button onclick="closeVideo()" class="absolute top-2 right-2 text-white text-2xl font-bold">✖</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="flooring-gallery" class="py-8 bg-gray-300">
           <div class="container mx-auto text-center">
             <h2 class="text-2xl font-bold mb-6">Badkamers - Wandtegel 6x20 lichtblauwtinten</h2>
   
             <!-- Image Grid -->
             <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
-              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten5.jpg" data-lightbox="Bathrooms" data-title="Bathroom 1" class="overflow-hidden">
-                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten5.jpg" alt="Bathrooms" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten5.jpg" data-lightbox="Lichtblauwtinten" data-title="Lichtblauwtinten 1" class="overflow-hidden">
+                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten5.jpg" alt="Lichtblauwtinten" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten4.jpg" data-lightbox="Bathrooms" data-title="Bathrooms 2" class="overflow-hidden">
-                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten4.jpg" alt="Bathrooms" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten4.jpg" data-lightbox="Lichtblauwtinten" data-title="Lichtblauwtinten 2" class="overflow-hidden">
+                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten4.jpg" alt="Lichtblauwtinten" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten3.jpg" data-lightbox="Bathrooms" data-title="Bathrooms 3" class="overflow-hidden">
-                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten3.jpg" alt="Bathrooms" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten3.jpg" data-lightbox="Lichtblauwtinten" data-title="Lichtblauwtinten 3" class="overflow-hidden">
+                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten3.jpg" alt="Lichtblauwtinten" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten.jpg" data-lightbox="Bathrooms" data-title="Bathrooms 4" class="overflow-hidden">
-                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten.jpg" alt="Bathrooms" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten.jpg" data-lightbox="Lichtblauwtinten" data-title="Lichtblauwtinten 4" class="overflow-hidden">
+                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten.jpg" alt="Lichtblauwtinten" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten2.jpg" data-lightbox="Bathrooms" data-title="Bathrooms 5" class="overflow-hidden">
-                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten2.jpg" alt="Bathrooms" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten2.jpg" data-lightbox="Lichtblauwtinten" data-title="Lichtblauwtinten 5" class="overflow-hidden">
+                <img src="../../images/bathrooms/wandtegel 6×20 lichtblauwtinten2.jpg" alt="Lichtblauwtinten" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="flooring-gallery" class="py-8 bg-gray-200">
+          <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Badkamers - Inloopdouche 60x60 vloer+wand</h2>
+  
+            <!-- Image Grid -->
+            <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
+              <a href="../../images/bathrooms/eigendouchethuis 3.jpg" data-lightbox="Inloopdouche" data-title="Inloopdouche 1" class="overflow-hidden">
+                <img src="../../images/bathrooms/eigendouchethuis 3.jpg" alt="Inloopdouche" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+              <a href="../../images/bathrooms/eigendouchethuis 2.jpg" data-lightbox="Inloopdouche" data-title="Inloopdouche 2" class="overflow-hidden">
+                <img src="../../images/bathrooms/eigendouchethuis 2.jpg" alt="Inloopdouche" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+              <a href="../../images/bathrooms/eigendouchethuis 4.jpg" data-lightbox="Inloopdouche" data-title="Inloopdouche 3" class="overflow-hidden">
+                <img src="../../images/bathrooms/eigendouchethuis 4.jpg" alt="Inloopdouche" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+              <a href="../../images/bathrooms/eigendouchethuis 5.jpg" data-lightbox="Inloopdouche" data-title="Inloopdouche 4" class="overflow-hidden">
+                <img src="../../images/bathrooms/eigendouchethuis 5.jpg" alt="Inloopdouche" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              </a>
+              <a href="../../images/bathrooms/eigendouchethuis.jpg" data-lightbox="Inloopdouche" data-title="Inloopdouche 5" class="overflow-hidden">
+                <img src="../../images/bathrooms/eigendouchethuis.jpg" alt="Inloopdouche" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
             </div>
           </div>
@@ -123,11 +171,11 @@
   
             <!-- Image Grid -->
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-              <a href="../../images/bathrooms/badkamer-muurtegels3.jpg" data-lightbox="Bathrooms2" data-title="Bathroom 1" class="overflow-hidden">
-                <img src="../../images/bathrooms/badkamer-muurtegels3.jpg" alt="Bathrooms2" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/badkamer-muurtegels3.jpg" data-lightbox="Badkamerverwarmingsysteem" data-title="Badkamerverwarmingsysteem 1" class="overflow-hidden">
+                <img src="../../images/bathrooms/badkamer-muurtegels3.jpg" alt="Badkamerverwarmingsysteem" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/badkamer-muurtegels.jpg" data-lightbox="Bathrooms2" data-title="Bathrooms 2" class="overflow-hidden">
-                <img src="../../images/bathrooms/badkamer-muurtegels.jpg" alt="Bathrooms2" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/badkamer-muurtegels.jpg" data-lightbox="Badkamerverwarmingsysteem" data-title="Badkamerverwarmingsysteem 2" class="overflow-hidden">
+                <img src="../../images/bathrooms/badkamer-muurtegels.jpg" alt="Badkamerverwarmingsysteem" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
             </div>
           </div>
@@ -139,14 +187,14 @@
   
             <!-- Image Grid -->
             <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
-              <a href="../../images/bathrooms/badkamer3.jpg" data-lightbox="Bathrooms3" data-title="Bathroom 1" class="overflow-hidden">
-                <img src="../../images/bathrooms/badkamer3.jpg" alt="Bathrooms3" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/badkamer3.jpg" data-lightbox="Badkamereiland" data-title="Badkamereiland 1" class="overflow-hidden">
+                <img src="../../images/bathrooms/badkamer3.jpg" alt="Badkamereiland" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/badkamer.jpg" data-lightbox="Bathrooms3" data-title="Bathrooms 2" class="overflow-hidden">
-                <img src="../../images/bathrooms/badkamer.jpg" alt="Bathrooms3" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/badkamer.jpg" data-lightbox="Badkamereiland" data-title="Badkamereiland 2" class="overflow-hidden">
+                <img src="../../images/bathrooms/badkamer.jpg" alt="Badkamereiland" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/badkamer2.jpg" data-lightbox="Bathrooms3" data-title="Bathrooms 3" class="overflow-hidden">
-                <img src="../../images/bathrooms/badkamer2.jpg" alt="Bathrooms3" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/badkamer2.jpg" data-lightbox="Badkamereiland" data-title="Badkamereiland 3" class="overflow-hidden">
+                <img src="../../images/bathrooms/badkamer2.jpg" alt="Badkamereiland" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
             </div>
           </div>
@@ -154,28 +202,15 @@
 
         <section id="flooring-gallery" class="py-8 bg-gray-300">
           <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-6">Badkamers - Inloopdouche 60x60 vloer+wand</h2>
-  
-            <!-- Image Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
-              <a href="../../images/bathrooms/eigendouchethuis.jpg" data-lightbox="Bathrooms4" data-title="Bathroom 1" class="overflow-hidden">
-                <img src="../../images/bathrooms/eigendouchethuis.jpg" alt="Bathrooms4" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="flooring-gallery" class="py-8 bg-gray-200">
-          <div class="container mx-auto text-center">
             <h2 class="text-2xl font-bold mb-6">Badkamers - Douchetegels 60x60</h2>
   
             <!-- Image Grid -->
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-              <a href="../../images/bathrooms/douchemetgrijzetegels.jpg" data-lightbox="Bathrooms5" data-title="Bathroom 1" class="overflow-hidden">
-                <img src="../../images/bathrooms/douchemetgrijzetegels.jpg" alt="Bathrooms5" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/douchemetgrijzetegels.jpg" data-lightbox="Douchetegels60x60" data-title="Douchetegels60x60 1" class="overflow-hidden">
+                <img src="../../images/bathrooms/douchemetgrijzetegels.jpg" alt="Douchetegels60x60" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
-              <a href="../../images/bathrooms/douchemetgrijzetegels2.jpg" data-lightbox="Bathrooms5" data-title="Bathrooms 2" class="overflow-hidden">
-                <img src="../../images/bathrooms/douchemetgrijzetegels2.jpg" alt="Bathrooms5" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
+              <a href="../../images/bathrooms/douchemetgrijzetegels2.jpg" data-lightbox="Douchetegels60x60" data-title="Douchetegels60x60 2" class="overflow-hidden">
+                <img src="../../images/bathrooms/douchemetgrijzetegels2.jpg" alt="Douchetegels60x60" class="hover:scale-110 transition-transform duration-300 w-full h-auto object-cover aspect-[4/3]">
               </a>
             </div>
           </div>
