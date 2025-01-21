@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
     <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/script.js"></script>
@@ -195,14 +196,30 @@
             </div>
           </div>
         </section>
-        
-        <section id="flooring-gallery" class="py-8" style="background-color: rgb(50, 50, 53);" >
+
+        <section id="video-gallery" style="background-color: rgb(50, 50, 53);">
           <div class="container mx-auto text-center">
-            <!-- Image Grid -->
+            <!-- Video Thumbnail -->
             <div class="flex justify-center">
-              <a href="images/terraces-driveways/terras-omi2.jpg" data-lightbox="flooring5" data-title="Binnenvloer 1" class="overflow-hidden">
-                <img src="images/terraces-driveways/terras-omi2.jpg" alt="Binnenvloer parket" class="hover:scale-110 transition-transform duration-300 h-auto object-cover aspect-[4/3]">
-              </a>
+              <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="2560"
+              height="1056"
+              poster="images/flooring/Tegel60x60Parket120x20.jpg"
+              data-setup="{}"
+            >
+              <source src="images/hoofdpaginavideo.mp4" type="video/mp4" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
             </div>
           </div>
         </section>
@@ -291,12 +308,12 @@
         <footer class="text-white py-8" style="background-color: rgb(128, 173, 183);">
           <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <!-- Copyright Text -->
-            <p class="text-sm md:text-xs sm:text-xxs w-full md:w-auto">
+            <p class="text-sm md:text-base sm:text-xs w-full md:w-auto">
               Copyright &copy; 2025 Vloerwerken Delaere. All rights reserved.
             </p>
             <!-- Website Info Text -->
-            <p class="text-sm md:text-xs sm:text-xxs w-full md:w-auto mt-4 md:mt-0 text-center md:text-left">
-              Website gemaakt door Delaere Tristan
+            <p class="text-sm md:text-base sm:text-xs w-full md:w-auto mt-4 md:mt-0 text-center md:text-left">
+              Website gemaakt door Raccoon Webcraft
             </p>
           </div>
         </footer>
