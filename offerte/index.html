@@ -10,8 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="../js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <title>Vloerwerken Delaere</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function ()
+      {
+        emailjs.init({
+          publicKey: "RbdU9YtdgPr-bp4NC",
+        });
+      })();
+    </script>    <title>Vloerwerken Delaere</title>
     <link rel="icon" href="../images/vloerwerkenlogosupercut.JPG" type="image/png">
 </head>
 <body class="font-wallpoet">
@@ -107,29 +114,29 @@
           <div class="container mx-auto p-8 max-w-4xl">
               <div class="bg-white p-6 rounded shadow-md">
                   <h3 class="text-2xl font-bold mb-4 text-gray-800 max-sm:text-xl max-sm:mb-2">Offerte Aanvragen</h3>
-                  <form>
+                  <form style="font-family: 'Arial', sans-serif;">
                       <!-- Name -->
                       <div class="mb-4">
                           <label for="name" class="block text-gray-700 max-sm:text-sm">Naam</label>
-                          <input type="text" id="name" name="name" placeholder="Uw naam" class="w-full p-2 border rounded max-sm:text-sm" required />
+                          <input type="text" id="name" name="name" placeholder="Uw naam (John Doe)" class="w-full p-2 border rounded max-sm:text-sm" required />
                       </div>
       
                       <!-- Phone -->
                       <div class="mb-4">
                           <label for="phone" class="block text-gray-700 max-sm:text-sm">Telefoonnummer</label>
-                          <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer" class="w-full p-2 border rounded max-sm:text-sm" required />
+                          <input type="text" id="phone" name="phone" placeholder="Uw telefoonnummer (0468420420)" class="w-full p-2 border rounded max-sm:text-sm" required />
                       </div>
       
                       <!-- Email -->
                       <div class="mb-4">
                           <label for="email" class="block text-gray-700 max-sm:text-sm">E-mail</label>
-                          <input type="email" id="email" name="email" placeholder="Uw e-mailadres" class="w-full p-2 border rounded max-sm:text-sm" required />
+                          <input type="email" id="email" name="email" placeholder="Uw e-mailadres (naam@email.com)" class="w-full p-2 border rounded max-sm:text-sm" required />
                       </div>
       
                       <!-- Location -->
                       <div class="mb-4">
                           <label for="location" class="block text-gray-700 max-sm:text-sm">Locatie project</label>
-                          <input type="text" id="location" name="location" placeholder="Locatie van het project" class="w-full p-2 border rounded max-sm:text-sm" required />
+                          <input type="text" id="location" name="location" placeholder="Locatie van het project (Brugge)" class="w-full p-2 border rounded max-sm:text-sm" required />
                       </div>
       
                       <!-- Services -->
@@ -137,28 +144,24 @@
                           <label class="block text-gray-700 max-sm:text-sm">Selecteer diensten</label>
                           <div class="flex flex-wrap space-y-2 md:space-y-0 md:space-x-4">
                               <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="vloeren" />
+                                  <input type="checkbox" name="services" value="Vloeren" />
                                   <span>Vloeren</span>
                               </label>
                               <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="wandtegels" />
-                                  <span>Wandtegels</span>
+                                  <input type="checkbox" name="services" value="Wandtegels/Mozaïek" />
+                                  <span>Wandtegels/Mozaïek</span>
                               </label>
                               <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="badkamers" />
+                                  <input type="checkbox" name="services" value="Terras/Oprit" />
+                                  <span>Terras/Oprit</span>
+                              </label>
+                              <label class="flex items-center space-x-2">
+                                  <input type="checkbox" name="services" value="Badkamers" />
                                   <span>Badkamers</span>
                               </label>
                               <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="opritten" />
-                                  <span>Opritten</span>
-                              </label>
-                              <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="terassen" />
-                                  <span>Terrassen</span>
-                              </label>
-                              <label class="flex items-center space-x-2">
-                                  <input type="checkbox" name="services" value="mozaiek" />
-                                  <span>Mozaïek</span>
+                                  <input type="checkbox" name="services" value="Terrassen op tegeldragers" />
+                                  <span>Terrassen op tegeldragers</span>
                               </label>
                           </div>
                       </div>
@@ -166,12 +169,12 @@
                       <!-- Description -->
                       <div class="mb-4">
                           <label for="description" class="block text-gray-700 max-sm:text-sm">Beschrijving</label>
-                          <textarea id="description" name="description" rows="4" placeholder="Geef een korte beschrijving van uw project" class="w-full p-2 border rounded max-sm:text-sm" required></textarea>
+                          <textarea id="description" name="description" rows="7" placeholder="Geef een korte beschrijving van uw project" class="w-full p-2 border rounded max-sm:text-sm" required></textarea>
                       </div>
       
                       <!-- Submit Button -->
                       <div class="mb-4">
-                          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full max-sm:text-sm">
+                          <button onclick="sendOfferEmail();" type="submit" class="hover:text-gray-300 text-white py-2 px-4 rounded w-full max-sm:text-sm" style="background-color: rgb(37, 49, 138);">
                               Vraag offerte aan
                           </button>
                       </div>
