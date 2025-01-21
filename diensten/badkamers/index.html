@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <link href="../../node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
@@ -95,23 +96,28 @@
 
         <section id="video-gallery" class="py-8 bg-gray-200">
           <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-6">Badkamers - Inloopdouche video</h2>
+            <h2 class="text-2xl font-bold mb-6">Badkamers - Tegeldragers video</h2>
             <!-- Video Thumbnail -->
             <div class="flex justify-center">
-              <a href="#video-lightbox" class="overflow-hidden" onclick="openVideo()">
-                <img src="../../images/bathrooms/douchethumnbnailplaybutton.PNG" alt="Video Thumbnail" class="hover:scale-110 transition-transform duration-300 h-full object-cover aspect-[16/9]" style="max-width: 25rem;">
-              </a>
-            </div>
-          </div>
-          
-          <!-- Lightbox Modal -->
-          <div id="video-lightbox" class="hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-            <div class="relative max-w-4xl mx-auto">
-              <video controls autoplay class="w-full h-auto">
-                <source src="../../images/bathrooms/douchvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button onclick="closeVideo()" class="absolute top-2 right-2 text-white text-2xl font-bold">✖</button>
+              <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="../../images/bathrooms/douchethumnbnailplaybutton.PNG"
+              data-setup="{}"
+            >
+              <source src="../../images/bathrooms/douchvideo.mp4" type="video/mp4" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
             </div>
           </div>
         </section>
