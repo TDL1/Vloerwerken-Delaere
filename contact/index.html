@@ -137,8 +137,8 @@
             <!-- Right Pane: Contact Form -->
             <div class="bg-white p-6 rounded shadow-md">
                 <h3 class="text-2xl font-bold mb-4 text-gray-800 max-sm:text-xl max-sm:mb-2">Stuur ons een bericht</h3>
-                <form style="font-family: 'Arial', sans-serif;">
-                    <div class="mb-4">
+                <form onsubmit="sendContactEmail(); return false;" style="font-family: 'Arial', sans-serif;">
+                  <div class="mb-4">
                         <label for="name" class="block text-gray-700 max-sm:text-sm">Naam</label>
                         <input type="text" id="name" name="name" placeholder="Uw naam (John Doe)" required class="w-full p-2 border rounded max-sm:text-sm text-black" />
                     </div>
@@ -155,12 +155,16 @@
                         <textarea id="message" name="message" rows="6" placeholder="Uw bericht" required class="w-full p-2 border rounded max-sm:text-sm text-black"></textarea>
                     </div>
                     <div class="mb-4">
-                        <button onclick="sendContactEmail();" type="submit" class=" hover:text-gray-300 text-white py-2 px-4 rounded w-full max-sm:text-sm" style="background-color: rgb(37, 49, 138);">
+                        <button type="submit" id="submitButton" class=" hover:text-gray-300 text-white py-2 px-4 rounded w-full max-sm:text-sm" style="background-color: rgb(37, 49, 138);">
                             Verstuur
                         </button>
                     </div>
                 </form>
             </div>
+        </div>
+        <div id="customAlert" class="custom-alert hidden">
+          <span id="alertMessage"></span>
+          <button onclick="closeCustomAlert()">OK</button>
         </div>
     </section>
 

@@ -1,14 +1,36 @@
-function openVideo() {
-    document.getElementById('video-lightbox').classList.remove('hidden');
+function showCustomAlert(message) {
+  const alertBox = document.getElementById('customAlert');
+  const alertMessage = document.getElementById('alertMessage');
+  alertMessage.textContent = message;
+  alertBox.classList.remove('hidden');
 }
 
-function closeVideo() {
-  document.getElementById('video-lightbox').classList.add('hidden');
+function closeCustomAlert() {
+  const alertBox = document.getElementById('customAlert');
+  alertBox.classList.add('hidden');
+
+  document.getElementById('name').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('phone').value = "";
+  
+  if  (document.getElementById('message'))
+  {
+    document.getElementById('message').value = "";
+  }
+  if (document.getElementById('location')) {
+    document.getElementById('location').value = "";
+    document.getElementById('description').value = "";
+    document.querySelectorAll('input[name="services"]').forEach(checkbox => checkbox.checked = false);
+  }
+
+  document.querySelector('#submitButton').disabled = false;
 }
 
 
 function sendContactEmail() {
   try {
+    document.querySelector('#submitButton').disabled = true;
+
     var templateParams = {
       to_name: "Vloerwerken Delaere",
       from_name: document.getElementById('name').value,
@@ -22,26 +44,25 @@ function sendContactEmail() {
     emailjs.send(serviceID, templateID, templateParams).then(
       (response) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert("Your message was sent successfully");
+        showCustomAlert("We hebben uw bericht ontvangen. Bedankt!");
       },
       (error) => {
         console.log('FAILED...', error);
-        alert("Failed to send your message. Please try again later.");
+        showCustomAlert("Het versturen van uw bericht is mislukt. Probeer het later opnieuw.");
+        document.querySelector('#submitButton').disabled = false;
       }
     );
-
-    document.getElementById('name').value = "";
-    document.getElementById('email').value = "";
-    document.getElementById('phone').value = "";
-    document.getElementById('message').value = "";
   } catch (err) {
     console.error("Unexpected error:", err);
-    alert("An unexpected error occurred. Please try again later.");
+    showCustomAlert("Er is een onverwachte fout opgetreden. Probeer het later opnieuw.");
+    document.querySelector('#submitButton').disabled = false;
   }
 }
 
 function sendOfferEmail() {
   try {
+    document.querySelector('#submitButton').disabled = true;
+
     var services = Array.from(document.querySelectorAll('input[name="services"]:checked'))
     .map(checkbox => checkbox.value)
     .join(', ');
@@ -62,22 +83,15 @@ function sendOfferEmail() {
     emailjs.send(serviceID, templateID, templateParams).then(
       (response) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert("Your message was sent successfully");
+        showCustomAlert("We hebben uw offerteaanvraag ontvangen. Bedankt!");
       },
       (error) => {
         console.log('FAILED...', error);
-        alert("Failed to send your message. Please try again later.");
+        showCustomAlert("Het versturen van uw offerteaanvraag is mislukt. Probeer het later opnieuw.");
       }
     );
-
-    document.getElementById('name').value = "";
-    document.getElementById('email').value = "";
-    document.getElementById('phone').value = "";
-    document.getElementById('location').value = "";
-    document.getElementById('description').value = "";
-    document.querySelectorAll('input[name="services"]').forEach(checkbox => checkbox.checked = false);
   } catch (err) {
     console.error("Unexpected error:", err);
-    alert("An unexpected error occurred. Please try again later.");
+    showCustomAlert("Er is een onverwachte fout opgetreden. Probeer het later opnieuw.");
   }
 }

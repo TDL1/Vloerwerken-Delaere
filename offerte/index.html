@@ -114,7 +114,7 @@
           <div class="container mx-auto p-8 max-w-4xl">
               <div class="bg-white p-6 rounded shadow-md">
                   <h3 class="text-2xl font-bold mb-4 text-gray-800 max-sm:text-xl max-sm:mb-2">Offerte Aanvragen</h3>
-                  <form style="font-family: 'Arial', sans-serif;">
+                  <form onsubmit="sendOfferEmail(); return false;" style="font-family: 'Arial', sans-serif;">
                       <!-- Name -->
                       <div class="mb-4">
                           <label for="name" class="block text-gray-700 max-sm:text-sm">Naam</label>
@@ -174,12 +174,16 @@
       
                       <!-- Submit Button -->
                       <div class="mb-4">
-                          <button onclick="sendOfferEmail();" type="submit" class="hover:text-gray-300 text-white py-2 px-4 rounded w-full max-sm:text-sm" style="background-color: rgb(37, 49, 138);">
+                          <button type="submit" id="submitButton" class="hover:text-gray-300 text-white py-2 px-4 rounded w-full max-sm:text-sm" style="background-color: rgb(37, 49, 138);">
                               Vraag offerte aan
                           </button>
                       </div>
                   </form>
               </div>
+          </div>
+          <div id="customAlert" class="custom-alert hidden">
+            <span id="alertMessage"></span>
+            <button onclick="closeCustomAlert()">OK</button>
           </div>
       </section>
 
