@@ -10,3 +10,7 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+node_modules/
