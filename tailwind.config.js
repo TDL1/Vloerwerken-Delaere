@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        wallpoet: ['Wallpoet', 'sans-serif'],
+        blackopsone: ['Black Ops One', 'sans-serif'],
       },
       screens: {
         // Add custom max-width media query for 700px
