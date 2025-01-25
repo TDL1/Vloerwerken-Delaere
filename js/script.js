@@ -43,8 +43,8 @@ function sendContactEmail()
       phone: document.getElementById('phone').value,
       message: document.getElementById('message').value
     }
-    const serviceID = "service_vdw2ylp";
-    const templateID = "template_by9n8xi";
+    const serviceID = "service_8barez7";
+    const templateID = "template_ny58lir";
 
     emailjs.send(serviceID, templateID, templateParams).then(
       (response) =>
@@ -87,8 +87,8 @@ function sendOfferEmail()
       description: document.getElementById('description').value
     }
 
-    const serviceID = "service_vdw2ylp";
-    const templateID = "template_2wsidgk";
+    const serviceID = "service_8barez7";
+    const templateID = "template_6eycg7v";
 
     emailjs.send(serviceID, templateID, templateParams).then(
       (response) =>
